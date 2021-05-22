@@ -1,3 +1,8 @@
-
+/* Font family */
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+/* Colours variables */
+#bloc_page {
+  font-size: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
