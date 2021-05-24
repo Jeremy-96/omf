@@ -8,12 +8,11 @@ $font-text: 'Roboto';
 
 body {
     font-family: $font-text;
-}
-.foot {
-    &__title {
-        font-family: $font-title;
+    a, p {
+        color:$colour-quaternary;
     }
-    &__links {
-        font-family:$font-text;
+    h2 {
+        color:$colour-quaternary;
+        font-family:$font-title;
     }
 }
