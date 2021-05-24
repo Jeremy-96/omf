@@ -1,2 +1,19 @@
+/* Add new polices */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+
+/* Create variables polices */
+$font-title: 'Shrikhand';
+$font-text: 'Roboto';
+
+body {
+    font-family: $font-text;
+}
+.foot {
+    &__title {
+        font-family: $font-title;
+    }
+    &__links {
+        font-family:$font-text;
+    }
+}
