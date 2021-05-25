@@ -10,11 +10,10 @@
 body {
   font-family: "Roboto";
 }
-body a, body p {
+body footer a, body footer p, body footer h2 {
   color: #FFFFFF;
 }
-body h2 {
-  color: #FFFFFF;
+body footer h2 {
   font-family: "Shrikhand";
 }
 
@@ -51,6 +50,44 @@ footer .foot__links .fa-utensils {
 }
 footer .foot__links .fa-hands-helping {
   margin-right: 10px;
+}
+
+header .header__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand";
+}
+
+/* Import all pages-sass files */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav .location__title {
+  width: 100%;
+  background-color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .location__title .fa-map-marker-alt {
+  margin-right: 25px;
+}
+nav .location__resevation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+nav {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .location {
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        &__title {
+            width:100%;
+            background-color:$colour-lightgrey;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .fa-map-marker-alt {
+                margin-right:25px;
+            }
+        }  
+        &__resevation {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }  
+    }
+}

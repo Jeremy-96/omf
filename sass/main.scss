@@ -1,10 +1,14 @@
 /* Import all utils-sass files */
-@import "./utils/_variables.scss";
-@import "./utils/mixins.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
 
 /* Import all base-sass files */
-@import "./base/_typography.scss";
-@import "./base/_base.scss";
+@import "./base/typography";
+@import "./base/base";
 
 /* Import all layouts-sass files */
-@import "./layouts/_footer.scss";
+@import "./layouts/footer";
+@import "./layouts/header";
+
+/* Import all pages-sass files */
+@import "./pages/nav"
