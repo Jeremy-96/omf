@@ -1,3 +1,8 @@
+/* Import all utils-sass files */
+/* Stock mixins for each breakpoints */
+/* Mobile */
+/* Tablet */
+/* Import all base-sass files */
 /* Add new polices */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
@@ -23,6 +28,7 @@ body, #bloc_page, header, footer {
   justify-content: center;
 }
 
+/* Import all layouts-sass files */
 footer {
   background-color: #353535;
 }
