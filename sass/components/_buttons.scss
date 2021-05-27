@@ -1,0 +1,13 @@
+.exploration__button {
+    @extend %flex-center;
+    height:50px;
+    border-radius:25px;
+    margin-bottom: 30px;
+    border:none;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    p {
+        font-size:17px;
+        color:$colour-quaternary;
+        margin:10px;
+    }
+}

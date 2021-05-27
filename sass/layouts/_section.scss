@@ -1,0 +1,27 @@
+
+section {
+    width:100%;
+    .functioning {
+        width:90%;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction:column;
+        ol {
+            width:100%;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;   
+        }
+    }
+    .restaurants {
+        width:90%;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction:column;
+        .choices {
+            width:100%;
+            @extend %flex-center;
+            justify-content: space-around;
+        }
+    }
+}
