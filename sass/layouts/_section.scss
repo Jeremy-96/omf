@@ -1,6 +1,7 @@
 
 section {
     width:100%;
+    height:auto;
     .functioning {
         width:90%;
         display:flex;
@@ -15,13 +16,27 @@ section {
     }
     .restaurants {
         width:90%;
+        height:350px;
         display:flex;
         justify-content: flex-start;
         flex-direction:column;
         .choices {
             width:100%;
             @extend %flex-center;
-            justify-content: space-around;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            &__first {
+                @include restaurants;
+            }
+            &__second {
+                @include restaurants;
+            }
+            &__third {
+                @include restaurants;
+            }
+            &__fourth {
+                @include restaurants;
+            }
         }
     }
 }

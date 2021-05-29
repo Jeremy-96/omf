@@ -1,7 +1,8 @@
 /* Import all utils-sass files */
-/* Stock mixins for each breakpoints */
-/* Mobile */
-/* Tablet */
+/* Mixin for each restaurants homepage */
+/* BREKPOINTS */
+/* Breakpoint for mobile */
+/* Brekpoint for tablet */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 .exploration__button, nav .exploration, nav .location__title, nav .location, section .restaurants .choices, header .header__logo, body, #bloc_page, header, footer, nav, main, section {
@@ -37,6 +38,9 @@ body, #bloc_page, header, footer, nav, main, section {
 figure {
   margin: 0;
   padding: 0;
+}
+figure img {
+  object-fit: cover;
 }
 
 /* Import all layouts-sass files */
@@ -76,6 +80,7 @@ header .header__logo {
 
 section {
   width: 100%;
+  height: auto;
 }
 section .functioning {
   width: 90%;
@@ -91,13 +96,171 @@ section .functioning ol {
 }
 section .restaurants {
   width: 90%;
+  height: 350px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
 section .restaurants .choices {
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .restaurants .choices__first {
+  width: 22.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transform: scale(1);
+}
+section .restaurants .choices__first:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 300ms;
+}
+section .restaurants .choices__first img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+section .restaurants .choices__first figcaption {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  line-height: 0.9em;
+}
+section .restaurants .choices__first figcaption h3 {
+  font-weight: bold;
+}
+section .restaurants .choices__first .fa-heart {
+  font-size: 24px;
+  transform: color;
+}
+section .restaurants .choices__first .fa-heart:hover {
+  color: black;
+}
+section .restaurants .choices__second {
+  width: 22.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transform: scale(1);
+}
+section .restaurants .choices__second:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 300ms;
+}
+section .restaurants .choices__second img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+section .restaurants .choices__second figcaption {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  line-height: 0.9em;
+}
+section .restaurants .choices__second figcaption h3 {
+  font-weight: bold;
+}
+section .restaurants .choices__second .fa-heart {
+  font-size: 24px;
+  transform: color;
+}
+section .restaurants .choices__second .fa-heart:hover {
+  color: black;
+}
+section .restaurants .choices__third {
+  width: 22.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transform: scale(1);
+}
+section .restaurants .choices__third:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 300ms;
+}
+section .restaurants .choices__third img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+section .restaurants .choices__third figcaption {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  line-height: 0.9em;
+}
+section .restaurants .choices__third figcaption h3 {
+  font-weight: bold;
+}
+section .restaurants .choices__third .fa-heart {
+  font-size: 24px;
+  transform: color;
+}
+section .restaurants .choices__third .fa-heart:hover {
+  color: black;
+}
+section .restaurants .choices__fourth {
+  width: 22.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transform: scale(1);
+}
+section .restaurants .choices__fourth:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 300ms;
+}
+section .restaurants .choices__fourth img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+section .restaurants .choices__fourth figcaption {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  line-height: 0.9em;
+}
+section .restaurants .choices__fourth figcaption h3 {
+  font-weight: bold;
+}
+section .restaurants .choices__fourth .fa-heart {
+  font-size: 24px;
+  transform: color;
+}
+section .restaurants .choices__fourth .fa-heart:hover {
+  color: black;
 }
 
 /* Import all pages-sass files */

@@ -9,6 +9,9 @@ body, #bloc_page, header, footer, nav, main, section {
     max-width:1600px;
 }
 figure {
+    img {
+        object-fit:cover;
+    }
     margin:0;
     padding:0;
 }
