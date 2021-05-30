@@ -1,13 +1,18 @@
 .exploration__button {
     @extend %flex-center;
-    height:50px;
+    padding:0.5em;
     border-radius:25px;
     margin-bottom: 30px;
     border:none;
     background: linear-gradient($colour-secondary, $colour-primary);
+    transform:scale(1);
+    transition:ease-in-out 200ms;
     p {
         font-size:17px;
         color:$colour-quaternary;
         margin:10px;
+    }
+    &:hover {
+        transform:scale(1.1);
     }
 }
