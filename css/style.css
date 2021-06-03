@@ -190,8 +190,19 @@ section .restaurants .choices__first figcaption .choices__id {
 }
 section .restaurants .choices__first figcaption .choices__heart {
   width: 10%;
+}
+section .restaurants .choices__first figcaption .choices__heart--empty {
+  position: relative;
   font-size: 24px;
-  transition: all 800ms;
+}
+section .restaurants .choices__first figcaption .choices__heart--filled {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  transition: 400ms;
+}
+section .restaurants .choices__first figcaption .choices__heart--filled:hover {
+  color: #c968db;
 }
 section .restaurants .choices__second {
   width: 22.5%;
@@ -221,8 +232,19 @@ section .restaurants .choices__second figcaption .choices__id {
 }
 section .restaurants .choices__second figcaption .choices__heart {
   width: 10%;
+}
+section .restaurants .choices__second figcaption .choices__heart--empty {
+  position: relative;
   font-size: 24px;
-  transition: all 800ms;
+}
+section .restaurants .choices__second figcaption .choices__heart--filled {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  transition: 400ms;
+}
+section .restaurants .choices__second figcaption .choices__heart--filled:hover {
+  color: #c968db;
 }
 section .restaurants .choices__third {
   width: 22.5%;
@@ -252,8 +274,19 @@ section .restaurants .choices__third figcaption .choices__id {
 }
 section .restaurants .choices__third figcaption .choices__heart {
   width: 10%;
+}
+section .restaurants .choices__third figcaption .choices__heart--empty {
+  position: relative;
   font-size: 24px;
-  transition: all 800ms;
+}
+section .restaurants .choices__third figcaption .choices__heart--filled {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  transition: 400ms;
+}
+section .restaurants .choices__third figcaption .choices__heart--filled:hover {
+  color: #c968db;
 }
 section .restaurants .choices__fourth {
   width: 22.5%;
@@ -283,8 +316,19 @@ section .restaurants .choices__fourth figcaption .choices__id {
 }
 section .restaurants .choices__fourth figcaption .choices__heart {
   width: 10%;
+}
+section .restaurants .choices__fourth figcaption .choices__heart--empty {
+  position: relative;
   font-size: 24px;
-  transition: all 800ms;
+}
+section .restaurants .choices__fourth figcaption .choices__heart--filled {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  transition: 400ms;
+}
+section .restaurants .choices__fourth figcaption .choices__heart--filled:hover {
+  color: #c968db;
 }
 
 /* Import all pages-sass files */

@@ -28,8 +28,20 @@
         .choices__heart {
             @extend %flex-center;
             width:10%;
-            font-size:24px;
-            transition:all 800ms;
+            &--empty {
+                position:relative;
+                font-size:24px;
+            }
+            &--filled {
+                position:absolute;
+                color:white;
+                font-size:22px;
+                transition:400ms;
+                &:hover {
+                    color:mix($colour-primary,$colour-secondary);
+                    
+                }
+            }
         }
     }
 }
