@@ -8,6 +8,7 @@ header {
     .header {
         width:100%;
         @extend %flex-center;
+        /* Back arrow on the menus pages */
         &__back {
             position: absolute;
             top: 35%;
@@ -15,12 +16,12 @@ header {
             text-decoration: none;
             color:black;
             font-size:24px;
-            transition:transform 200ms;
+            transition:transform ease-in-out 200ms;
             &:hover {
-                transform:scale(1.3)
+                transform:scale(1.4)
             }
         }
-        
+        /* Header logo for each page */
         &__logo {
             position: relative;
             font-family: $font-title;

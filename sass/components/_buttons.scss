@@ -5,7 +5,7 @@
     border-radius:25px;
     margin-bottom: 30px;
     border:none;
-    background: linear-gradient($colour-secondary, $colour-primary);
+    background:$linear-gradient;
     box-shadow:2px 2px 10px grey;
     transition:all 200ms;
     p {
@@ -14,8 +14,7 @@
         margin:10px;
     }
     &:hover {
-        background:linear-gradient($colour-secondary, $colour-tertiary);
-        box-shadow:10px 10px 20px grey;
-        transform: scale(1.1);
+        opacity: 80%;
+        box-shadow:8px 8px 15px grey;
     }
 }
