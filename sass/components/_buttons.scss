@@ -7,7 +7,7 @@
     border:none;
     background:$linear-gradient;
     box-shadow:2px 2px 10px grey;
-    transition:all 200ms;
+    transition:ease-in-out 200ms;
     p {
         font-size:17px;
         color:$colour-quaternary;

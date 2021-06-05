@@ -13,8 +13,9 @@ nav {
         }
     }  
     .exploration {
-        width:100%;
+        width:90%;
         @extend %flex-center;
+        text-align:center;
         flex-direction:column;
     }  
 }
