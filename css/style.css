@@ -5,7 +5,7 @@
 /* Mixin for each restaurants homepage */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-.exploration__button, nav .exploration, nav .location__title, nav .location, section .restaurants .choices__fourth figcaption .choices__heart, section .restaurants .choices__fourth figcaption, section .restaurants .choices__fourth .choices__new, section .restaurants .choices__third figcaption .choices__heart, section .restaurants .choices__third figcaption, section .restaurants .choices__third .choices__new, section .restaurants .choices__second figcaption .choices__heart, section .restaurants .choices__second figcaption, section .restaurants .choices__second .choices__new, section .restaurants .choices__first figcaption .choices__heart, section .restaurants .choices__first figcaption, section .restaurants .choices__first .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
+.exploration__button, nav .exploration, nav .location__title, nav .location, section .card .menu__choice .food, section .card .menu__title .title__heart, section .card .menu, section .card, section .restaurants .choices__fourth figcaption .choices__heart, section .restaurants .choices__fourth figcaption, section .restaurants .choices__fourth .choices__new, section .restaurants .choices__third figcaption .choices__heart, section .restaurants .choices__third figcaption, section .restaurants .choices__third .choices__new, section .restaurants .choices__second figcaption .choices__heart, section .restaurants .choices__second figcaption, section .restaurants .choices__second .choices__new, section .restaurants .choices__first figcaption .choices__heart, section .restaurants .choices__first figcaption, section .restaurants .choices__first .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +101,9 @@ header .header__logo {
 section {
   width: 100%;
   height: auto;
+  /* Section for index.html */
+  /* Section for index.html */
+  /* Section for each menu page */
 }
 section .functioning {
   width: 100%;
@@ -452,6 +455,74 @@ section .restaurants .choices__fourth figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+section .card {
+  width: 100%;
+  flex-direction: column;
+}
+section .card .image {
+  height: 500px;
+  position: relative;
+}
+section .card .image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+section .card .menu {
+  width: 100%;
+  flex-direction: column;
+  border-radius: 30px 30px 0 0;
+  background-color: #f5f5f5;
+}
+section .card .menu__title {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .card .menu__title h2 {
+  font-family: "Shrikhand";
+}
+section .card .menu__title .title__heart {
+  width: 10%;
+}
+section .card .menu__title .title__heart--empty {
+  position: relative;
+  font-size: 24px;
+}
+section .card .menu__title .title__heart--filled {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  transition: 200ms;
+}
+section .card .menu__title .title__heart--filled:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section .card .menu__choice {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+section .card .menu__choice .food {
+  width: 100%;
+  flex-direction: column;
+}
+section .card .menu__choice .food__choice {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  background-color: white;
+}
+section .card .menu__choice .food__choice h3 {
+  margin: 15px;
+}
+section .card .menu__choice .food__choice p {
+  margin: 15px;
 }
 
 /* Import all pages-sass files */
