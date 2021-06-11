@@ -1,5 +1,11 @@
+/* Extension to align on center */
 %flex-center {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Extension for underline "entrées, plats, desserts" */
+%underliner {
+    border-bottom:3px solid $colour-tertiary; 
 }

@@ -1,14 +1,21 @@
+@charset "UTF-8";
 /* Import all utils-sass files */
 /* BREKPOINTS */
 /* Breakpoint for mobile */
 /* Brekpoint for tablet */
 /* Mixin for each restaurants homepage */
+/* Extension to align on center */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-.exploration__button, nav .exploration, nav .location__title, nav .location, section .card .menu__choice .food, section .card .menu__title .title__heart, section .card .menu, section .card, section .restaurants .choices__fourth figcaption .choices__heart, section .restaurants .choices__fourth figcaption, section .restaurants .choices__fourth .choices__new, section .restaurants .choices__third figcaption .choices__heart, section .restaurants .choices__third figcaption, section .restaurants .choices__third .choices__new, section .restaurants .choices__second figcaption .choices__heart, section .restaurants .choices__second figcaption, section .restaurants .choices__second .choices__new, section .restaurants .choices__first figcaption .choices__heart, section .restaurants .choices__first figcaption, section .restaurants .choices__first .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
+.exploration__button, nav .exploration, nav .location__title, nav .location, section .card .menu__choice .food__choice, section .card .menu__choice .food, section .card .menu__title .title__heart, section .card .menu, section .card, section .restaurants .choices__fourth figure figcaption .choices__heart, section .restaurants .choices__fourth figure figcaption, section .restaurants .choices__fourth figure .choices__new, section .restaurants .choices__third figure figcaption .choices__heart, section .restaurants .choices__third figure figcaption, section .restaurants .choices__third figure .choices__new, section .restaurants .choices__second figure figcaption .choices__heart, section .restaurants .choices__second figure figcaption, section .restaurants .choices__second figure .choices__new, section .restaurants .choices__first figure figcaption .choices__heart, section .restaurants .choices__first figure figcaption, section .restaurants .choices__first figure .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Extension for underline "entrées, plats, desserts" */
+section .card .menu__choice .underline {
+  border-bottom: 3px solid #99E2D0;
 }
 
 /* Import all base-sass files */
@@ -208,7 +215,10 @@ section .restaurants .choices__first {
     width: 100%;
   }
 }
-section .restaurants .choices__first .choices__new {
+section .restaurants .choices__first figure {
+  height: auto;
+}
+section .restaurants .choices__first figure .choices__new {
   width: 30%;
   height: 15%;
   background-color: #99E2D0;
@@ -218,42 +228,48 @@ section .restaurants .choices__first .choices__new {
   z-index: 1;
   border-radius: 3px;
 }
-section .restaurants .choices__first .choices__new p {
+section .restaurants .choices__first figure .choices__new p {
   font-size: 15px;
   color: #1b6150;
 }
-section .restaurants .choices__first img {
+section .restaurants .choices__first figure img {
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0 0;
 }
-section .restaurants .choices__first figcaption {
+section .restaurants .choices__first figure figcaption {
+  margin: 0;
+  padding: 0;
   background-color: white;
   height: 70px;
   border-radius: 0 0 10px 10px;
-  line-height: 0.9em;
 }
-section .restaurants .choices__first figcaption .choices__id {
+section .restaurants .choices__first figure figcaption .choices__id {
+  background-color: white;
   width: 80%;
+  height: 100%;
 }
-section .restaurants .choices__first figcaption .choices__id h3 {
-  margin: 0;
+section .restaurants .choices__first figure figcaption .choices__id h3 {
+  margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__first figcaption .choices__heart {
+section .restaurants .choices__first figure figcaption .choices__id p {
+  margin-top: 10px;
+}
+section .restaurants .choices__first figure figcaption .choices__heart {
   width: 10%;
 }
-section .restaurants .choices__first figcaption .choices__heart--empty {
+section .restaurants .choices__first figure figcaption .choices__heart--empty {
   position: relative;
   font-size: 24px;
 }
-section .restaurants .choices__first figcaption .choices__heart--filled {
+section .restaurants .choices__first figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: 200ms;
+  transition: ease-in-out 200ms;
 }
-section .restaurants .choices__first figcaption .choices__heart--filled:hover {
+section .restaurants .choices__first figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -274,7 +290,10 @@ section .restaurants .choices__second {
     width: 100%;
   }
 }
-section .restaurants .choices__second .choices__new {
+section .restaurants .choices__second figure {
+  height: auto;
+}
+section .restaurants .choices__second figure .choices__new {
   width: 30%;
   height: 15%;
   background-color: #99E2D0;
@@ -284,42 +303,48 @@ section .restaurants .choices__second .choices__new {
   z-index: 1;
   border-radius: 3px;
 }
-section .restaurants .choices__second .choices__new p {
+section .restaurants .choices__second figure .choices__new p {
   font-size: 15px;
   color: #1b6150;
 }
-section .restaurants .choices__second img {
+section .restaurants .choices__second figure img {
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0 0;
 }
-section .restaurants .choices__second figcaption {
+section .restaurants .choices__second figure figcaption {
+  margin: 0;
+  padding: 0;
   background-color: white;
   height: 70px;
   border-radius: 0 0 10px 10px;
-  line-height: 0.9em;
 }
-section .restaurants .choices__second figcaption .choices__id {
+section .restaurants .choices__second figure figcaption .choices__id {
+  background-color: white;
   width: 80%;
+  height: 100%;
 }
-section .restaurants .choices__second figcaption .choices__id h3 {
-  margin: 0;
+section .restaurants .choices__second figure figcaption .choices__id h3 {
+  margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__second figcaption .choices__heart {
+section .restaurants .choices__second figure figcaption .choices__id p {
+  margin-top: 10px;
+}
+section .restaurants .choices__second figure figcaption .choices__heart {
   width: 10%;
 }
-section .restaurants .choices__second figcaption .choices__heart--empty {
+section .restaurants .choices__second figure figcaption .choices__heart--empty {
   position: relative;
   font-size: 24px;
 }
-section .restaurants .choices__second figcaption .choices__heart--filled {
+section .restaurants .choices__second figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: 200ms;
+  transition: ease-in-out 200ms;
 }
-section .restaurants .choices__second figcaption .choices__heart--filled:hover {
+section .restaurants .choices__second figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -340,7 +365,10 @@ section .restaurants .choices__third {
     width: 100%;
   }
 }
-section .restaurants .choices__third .choices__new {
+section .restaurants .choices__third figure {
+  height: auto;
+}
+section .restaurants .choices__third figure .choices__new {
   width: 30%;
   height: 15%;
   background-color: #99E2D0;
@@ -350,42 +378,48 @@ section .restaurants .choices__third .choices__new {
   z-index: 1;
   border-radius: 3px;
 }
-section .restaurants .choices__third .choices__new p {
+section .restaurants .choices__third figure .choices__new p {
   font-size: 15px;
   color: #1b6150;
 }
-section .restaurants .choices__third img {
+section .restaurants .choices__third figure img {
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0 0;
 }
-section .restaurants .choices__third figcaption {
+section .restaurants .choices__third figure figcaption {
+  margin: 0;
+  padding: 0;
   background-color: white;
   height: 70px;
   border-radius: 0 0 10px 10px;
-  line-height: 0.9em;
 }
-section .restaurants .choices__third figcaption .choices__id {
+section .restaurants .choices__third figure figcaption .choices__id {
+  background-color: white;
   width: 80%;
+  height: 100%;
 }
-section .restaurants .choices__third figcaption .choices__id h3 {
-  margin: 0;
+section .restaurants .choices__third figure figcaption .choices__id h3 {
+  margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__third figcaption .choices__heart {
+section .restaurants .choices__third figure figcaption .choices__id p {
+  margin-top: 10px;
+}
+section .restaurants .choices__third figure figcaption .choices__heart {
   width: 10%;
 }
-section .restaurants .choices__third figcaption .choices__heart--empty {
+section .restaurants .choices__third figure figcaption .choices__heart--empty {
   position: relative;
   font-size: 24px;
 }
-section .restaurants .choices__third figcaption .choices__heart--filled {
+section .restaurants .choices__third figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: 200ms;
+  transition: ease-in-out 200ms;
 }
-section .restaurants .choices__third figcaption .choices__heart--filled:hover {
+section .restaurants .choices__third figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -406,7 +440,10 @@ section .restaurants .choices__fourth {
     width: 100%;
   }
 }
-section .restaurants .choices__fourth .choices__new {
+section .restaurants .choices__fourth figure {
+  height: auto;
+}
+section .restaurants .choices__fourth figure .choices__new {
   width: 30%;
   height: 15%;
   background-color: #99E2D0;
@@ -416,48 +453,55 @@ section .restaurants .choices__fourth .choices__new {
   z-index: 1;
   border-radius: 3px;
 }
-section .restaurants .choices__fourth .choices__new p {
+section .restaurants .choices__fourth figure .choices__new p {
   font-size: 15px;
   color: #1b6150;
 }
-section .restaurants .choices__fourth img {
+section .restaurants .choices__fourth figure img {
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0 0;
 }
-section .restaurants .choices__fourth figcaption {
+section .restaurants .choices__fourth figure figcaption {
+  margin: 0;
+  padding: 0;
   background-color: white;
   height: 70px;
   border-radius: 0 0 10px 10px;
-  line-height: 0.9em;
 }
-section .restaurants .choices__fourth figcaption .choices__id {
+section .restaurants .choices__fourth figure figcaption .choices__id {
+  background-color: white;
   width: 80%;
+  height: 100%;
 }
-section .restaurants .choices__fourth figcaption .choices__id h3 {
-  margin: 0;
+section .restaurants .choices__fourth figure figcaption .choices__id h3 {
+  margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__fourth figcaption .choices__heart {
+section .restaurants .choices__fourth figure figcaption .choices__id p {
+  margin-top: 10px;
+}
+section .restaurants .choices__fourth figure figcaption .choices__heart {
   width: 10%;
 }
-section .restaurants .choices__fourth figcaption .choices__heart--empty {
+section .restaurants .choices__fourth figure figcaption .choices__heart--empty {
   position: relative;
   font-size: 24px;
 }
-section .restaurants .choices__fourth figcaption .choices__heart--filled {
+section .restaurants .choices__fourth figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: 200ms;
+  transition: ease-in-out 200ms;
 }
-section .restaurants .choices__fourth figcaption .choices__heart--filled:hover {
+section .restaurants .choices__fourth figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 section .card {
   width: 100%;
+  height: auto;
   flex-direction: column;
 }
 section .card .image {
@@ -470,10 +514,20 @@ section .card .image img {
   object-fit: cover;
 }
 section .card .menu {
-  width: 100%;
+  width: 80%;
   flex-direction: column;
   border-radius: 30px 30px 0 0;
   background-color: #f5f5f5;
+}
+@media screen and (max-device-width: 1024px) {
+  section .card .menu {
+    width: 90%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  section .card .menu {
+    width: 100%;
+  }
 }
 section .card .menu__title {
   width: 90%;
@@ -495,7 +549,7 @@ section .card .menu__title .title__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: 200ms;
+  transition: ease-in-out 200ms;
 }
 section .card .menu__title .title__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -508,21 +562,42 @@ section .card .menu__choice {
   justify-content: flex-start;
   flex-direction: column;
 }
+section .card .menu__choice .underline {
+  width: 50px;
+}
 section .card .menu__choice .food {
   width: 100%;
+  height: auto;
   flex-direction: column;
 }
 section .card .menu__choice .food__choice {
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
+  height: 80px;
   border-radius: 20px;
   margin: 10px 0 10px 0;
   background-color: white;
 }
 section .card .menu__choice .food__choice h3 {
-  margin: 15px;
+  margin: 0;
+  width: 90%;
 }
-section .card .menu__choice .food__choice p {
-  margin: 15px;
+section .card .menu__choice .food__choice .price {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .card .menu__choice .food__choice .price p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: lighter;
+}
+section .card .menu__choice .food__choice .price span {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 /* Import all pages-sass files */
@@ -547,8 +622,11 @@ nav .exploration {
 
 /* Import all components-sass files */
 .exploration__button {
+  flex-wrap: wrap;
+  width: 200px;
+  height: 50px;
+  margin: 20px 0 20px 0;
   cursor: pointer;
-  padding: 0.5em;
   border-radius: 25px;
   margin-bottom: 30px;
   border: none;
@@ -557,7 +635,7 @@ nav .exploration {
   transition: ease-in-out 200ms;
 }
 .exploration__button p {
-  font-size: 17px;
+  font-size: 15px;
   color: #FFFFFF;
   margin: 10px;
 }
