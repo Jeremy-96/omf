@@ -103,8 +103,7 @@ section {
         @extend %flex-center;
         flex-direction:column;
         .image {
-            height:500px;
-            position:relative;
+            height:450px;
             img {
                 width:100%;
                 height:500px;
@@ -112,15 +111,14 @@ section {
             }
         }
         .menu {
-            width:80%;
+            position:relative;
+            z-index:1;
+            width:85%;
             @extend %flex-center;
             flex-direction:column;
             border-radius:30px 30px 0 0;
             background-color:$colour-lightnessgrey;
             @include tablet-only {
-                width:90%;
-            }
-            @include mobile-only {
                 width:100%;
             }
             &__title {
@@ -133,15 +131,16 @@ section {
                 }
                 .title__heart {
                     @extend %flex-center;
-                    width:10%;
+                    width:15%;
                     &--empty {
-                        position:relative;
-                        font-size:24px;
+                        position:absolute;
+                        color:black;
+                        font-size:23px;
                     }
                     &--filled {
-                        position:absolute;
+                        position:relative;
                         color:white;
-                        font-size:22px;
+                        font-size:21px;
                         transition: ease-in-out 200ms;
                         &:hover {
                             background:$linear-gradient;
@@ -169,6 +168,7 @@ section {
                         @extend %flex-center;
                         flex-direction:column;
                         justify-content: space-around;
+                        box-shadow: 5px 5px 5px $colour-lightgrey;
                         width:100%;
                         height: 80px;
                         border-radius:20px;
