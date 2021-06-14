@@ -7,7 +7,7 @@
 /* Extension to align on center */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-.menu__button, .exploration__button, nav .exploration, nav .location__title, nav .location, section .card .menu__choice .food__choice, section .card .menu__choice .food, section .card .menu__title .title__heart, section .card .menu, section .card, section .restaurants .choices__fourth figure figcaption .choices__heart, section .restaurants .choices__fourth figure figcaption, section .restaurants .choices__fourth figure .choices__new, section .restaurants .choices__third figure figcaption .choices__heart, section .restaurants .choices__third figure figcaption, section .restaurants .choices__third figure .choices__new, section .restaurants .choices__second figure figcaption .choices__heart, section .restaurants .choices__second figure figcaption, section .restaurants .choices__second figure .choices__new, section .restaurants .choices__first figure figcaption .choices__heart, section .restaurants .choices__first figure figcaption, section .restaurants .choices__first figure .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
+.menu__button, .exploration__button, .loader__quarter, .loader, nav .exploration, nav .location__title, nav .location, section .card .menu__choice .food__choice, section .card .menu__choice .food, section .card .menu__title .title__heart, section .card .menu, section .card, section .restaurants .choices__fourth figure figcaption .choices__heart, section .restaurants .choices__fourth figure figcaption, section .restaurants .choices__fourth figure .choices__new, section .restaurants .choices__third figure figcaption .choices__heart, section .restaurants .choices__third figure figcaption, section .restaurants .choices__third figure .choices__new, section .restaurants .choices__second figure figcaption .choices__heart, section .restaurants .choices__second figure figcaption, section .restaurants .choices__second figure .choices__new, section .restaurants .choices__first figure figcaption .choices__heart, section .restaurants .choices__first figure figcaption, section .restaurants .choices__first figure .choices__new, section .restaurants .choices, header .header, header, body, #bloc_page, footer, nav, main, section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,15 @@ section .card .menu__choice .underline {
   border-bottom: 3px solid #99E2D0;
 }
 
+/* Loading the main page */
+@keyframes loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Import all base-sass files */
 /* Add new polices */
 /* Create variables polices */
@@ -661,6 +670,42 @@ nav .exploration {
   width: 90%;
   text-align: center;
   flex-direction: column;
+}
+
+/* Loading the main page */
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #99E2D0;
+  opacity: 80%;
+  letter-spacing: 5px;
+  font-family: "Shrikhand";
+  font-size: 100px;
+  color: #9356DC;
+}
+.loader__quarter {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  border: 10px solid #FF79DA;
+  margin-right: 40px;
+}
+.loader__quarter:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  border-radius: 200px;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+  animation: loading-spin 2s linear infinite;
 }
 
 /* Import all components-sass files */

@@ -2,6 +2,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/keyframes";
 
 /* Import all base-sass files */
 @import "./base/typography";
@@ -14,7 +15,7 @@
 
 /* Import all pages-sass files */
 @import "./pages/nav";
-@import "./pages/main";
+@import "./pages/loader";
 
 /* Import all components-sass files */
 @import "./components/buttons";

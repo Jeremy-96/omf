@@ -1,0 +1,37 @@
+/* Loading the main page */
+.loader {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10000;
+    background:$colour-tertiary;
+    opacity:80%;
+    @extend %flex-center;
+    letter-spacing: 5px;
+    font-family:'Shrikhand';
+    font-size:100px;
+    color:$colour-primary;
+    &__quarter {
+        position:relative;
+        @extend %flex-center;
+        height:200px;
+        width:200px;
+        border-radius:200px;
+        border:10px solid $colour-secondary;
+        margin-right:40px;
+    }
+    &__quarter:after {
+        content:'';
+        position:absolute;
+        top:-10px;
+        left:-10px;
+        bottom:-10px;
+        right:-10px;
+        border-radius:200px;
+        border:10px solid transparent;
+        border-top-color:$colour-primary;
+        animation:loading-spin 2s linear infinite;
+    }
+}
