@@ -2,7 +2,7 @@
 /* Import all utils-sass files */
 /* BREKPOINTS */
 /* Breakpoint for mobile */
-/* Brekpoint for tablet */
+/* Breakpoint for tablet */
 /* Mixin for each restaurants homepage */
 /* Extension to align on center */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
@@ -249,13 +249,24 @@ section .restaurants .choices__first figure figcaption .choices__id {
   background-color: white;
   width: 80%;
   height: 100%;
+  text-decoration: none;
+  color: black;
 }
-section .restaurants .choices__first figure figcaption .choices__id h3 {
+section .restaurants .choices__first figure figcaption .choices__id--click {
+  width: 90%;
+  transition: ease-in-out 200ms;
+}
+section .restaurants .choices__first figure figcaption .choices__id--click h3 {
   margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__first figure figcaption .choices__id p {
+section .restaurants .choices__first figure figcaption .choices__id--click p {
   margin-top: 10px;
+}
+section .restaurants .choices__first figure figcaption .choices__id--click:hover {
+  border-radius: 5px;
+  background-color: #c1ede2;
+  transform: scale(1.05);
 }
 section .restaurants .choices__first figure figcaption .choices__heart {
   width: 10%;
@@ -268,7 +279,7 @@ section .restaurants .choices__first figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: ease-in-out 200ms;
+  transition: all 200ms;
 }
 section .restaurants .choices__first figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -324,13 +335,24 @@ section .restaurants .choices__second figure figcaption .choices__id {
   background-color: white;
   width: 80%;
   height: 100%;
+  text-decoration: none;
+  color: black;
 }
-section .restaurants .choices__second figure figcaption .choices__id h3 {
+section .restaurants .choices__second figure figcaption .choices__id--click {
+  width: 90%;
+  transition: ease-in-out 200ms;
+}
+section .restaurants .choices__second figure figcaption .choices__id--click h3 {
   margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__second figure figcaption .choices__id p {
+section .restaurants .choices__second figure figcaption .choices__id--click p {
   margin-top: 10px;
+}
+section .restaurants .choices__second figure figcaption .choices__id--click:hover {
+  border-radius: 5px;
+  background-color: #c1ede2;
+  transform: scale(1.05);
 }
 section .restaurants .choices__second figure figcaption .choices__heart {
   width: 10%;
@@ -343,7 +365,7 @@ section .restaurants .choices__second figure figcaption .choices__heart--filled 
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: ease-in-out 200ms;
+  transition: all 200ms;
 }
 section .restaurants .choices__second figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -399,13 +421,24 @@ section .restaurants .choices__third figure figcaption .choices__id {
   background-color: white;
   width: 80%;
   height: 100%;
+  text-decoration: none;
+  color: black;
 }
-section .restaurants .choices__third figure figcaption .choices__id h3 {
+section .restaurants .choices__third figure figcaption .choices__id--click {
+  width: 90%;
+  transition: ease-in-out 200ms;
+}
+section .restaurants .choices__third figure figcaption .choices__id--click h3 {
   margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__third figure figcaption .choices__id p {
+section .restaurants .choices__third figure figcaption .choices__id--click p {
   margin-top: 10px;
+}
+section .restaurants .choices__third figure figcaption .choices__id--click:hover {
+  border-radius: 5px;
+  background-color: #c1ede2;
+  transform: scale(1.05);
 }
 section .restaurants .choices__third figure figcaption .choices__heart {
   width: 10%;
@@ -418,7 +451,7 @@ section .restaurants .choices__third figure figcaption .choices__heart--filled {
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: ease-in-out 200ms;
+  transition: all 200ms;
 }
 section .restaurants .choices__third figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -474,13 +507,24 @@ section .restaurants .choices__fourth figure figcaption .choices__id {
   background-color: white;
   width: 80%;
   height: 100%;
+  text-decoration: none;
+  color: black;
 }
-section .restaurants .choices__fourth figure figcaption .choices__id h3 {
+section .restaurants .choices__fourth figure figcaption .choices__id--click {
+  width: 90%;
+  transition: ease-in-out 200ms;
+}
+section .restaurants .choices__fourth figure figcaption .choices__id--click h3 {
   margin: 10px 0 0 0;
   padding: 0;
 }
-section .restaurants .choices__fourth figure figcaption .choices__id p {
+section .restaurants .choices__fourth figure figcaption .choices__id--click p {
   margin-top: 10px;
+}
+section .restaurants .choices__fourth figure figcaption .choices__id--click:hover {
+  border-radius: 5px;
+  background-color: #c1ede2;
+  transform: scale(1.05);
 }
 section .restaurants .choices__fourth figure figcaption .choices__heart {
   width: 10%;
@@ -493,7 +537,7 @@ section .restaurants .choices__fourth figure figcaption .choices__heart--filled 
   position: absolute;
   color: white;
   font-size: 22px;
-  transition: ease-in-out 200ms;
+  transition: all 200ms;
 }
 section .restaurants .choices__fourth figure figcaption .choices__heart--filled:hover {
   background: linear-gradient(#FF79DA, #9356DC);
