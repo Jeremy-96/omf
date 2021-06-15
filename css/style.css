@@ -27,6 +27,15 @@ section .card .menu__choice .underline {
     transform: rotate(360deg);
   }
 }
+@keyframes loader {
+  0% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -10;
+  }
+}
 /* Import all base-sass files */
 /* Add new polices */
 /* Create variables polices */
@@ -680,12 +689,13 @@ nav .exploration {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #99E2D0;
+  background: #f5f5f5;
   opacity: 90%;
   letter-spacing: 5px;
   font-family: "Shrikhand";
   font-size: 70px;
   color: #9356DC;
+  animation: loader 1s ease-in-out 2s forwards;
 }
 .loader__quarter {
   position: relative;
@@ -704,16 +714,26 @@ nav .exploration {
   right: -10px;
   border-radius: 200px;
   border: 10px solid transparent;
-  border-top-color: #9356DC;
+  border-top-color: #99E2D0;
   animation: loading-spin 1s linear infinite;
+}
+.loader__text .dote1 {
+  color: #9356DC;
+}
+.loader__text .dote2 {
+  color: #FF79DA;
+}
+.loader__text .dote3 {
+  color: #99E2D0;
 }
 @media screen and (max-device-width: 1024px) {
   .loader {
     flex-direction: column;
+    font-size: 60px;
   }
 }
 @media screen and (max-device-width: 480px) {
-  .loader .letters {
+  .loader .loader__text {
     display: none;
   }
 }

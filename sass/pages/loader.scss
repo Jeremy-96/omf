@@ -6,7 +6,7 @@
     top:0;
     left:0;
     z-index:10000;
-    background:$colour-tertiary;
+    background:$colour-lightnessgrey;
     opacity:90%;
     @extend %flex-center;
     letter-spacing: 5px;
@@ -31,15 +31,28 @@
         right:-10px;
         border-radius:200px;
         border:10px solid transparent;
-        border-top-color:$colour-primary;
+        border-top-color:$colour-tertiary;
         animation:loading-spin 1s linear infinite;
+    }
+    &__text {
+        .dote1 {
+            color:$colour-primary
+        }
+        .dote2 {
+            color:$colour-secondary;
+        }
+        .dote3 {
+            color:$colour-tertiary;
+        }
     }
     @include tablet-only {
         flex-direction:column;
+        font-size:60px;
     }
     @include mobile-only {
-        .letters {
+        .loader__text {
             display:none;
         }
     }
+    animation:loader 1s ease-in-out 2s forwards; 
 }

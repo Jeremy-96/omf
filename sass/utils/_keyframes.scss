@@ -1,5 +1,19 @@
 /* Loading the main page */
 @keyframes loading-spin {
-    0%{transform:rotate(0deg);}
-    100%{transform:rotate(360deg);} 
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity:90%;
+    }
+    100% {
+        opacity:0%;
+        z-index:-10;
+    }
 }
