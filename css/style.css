@@ -681,10 +681,10 @@ nav .exploration {
   left: 0;
   z-index: 10000;
   background: #99E2D0;
-  opacity: 80%;
+  opacity: 90%;
   letter-spacing: 5px;
   font-family: "Shrikhand";
-  font-size: 100px;
+  font-size: 70px;
   color: #9356DC;
 }
 .loader__quarter {
@@ -705,7 +705,17 @@ nav .exploration {
   border-radius: 200px;
   border: 10px solid transparent;
   border-top-color: #9356DC;
-  animation: loading-spin 2s linear infinite;
+  animation: loading-spin 1s linear infinite;
+}
+@media screen and (max-device-width: 1024px) {
+  .loader {
+    flex-direction: column;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .loader .letters {
+    display: none;
+  }
 }
 
 /* Import all components-sass files */
