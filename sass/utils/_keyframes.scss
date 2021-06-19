@@ -7,7 +7,6 @@
         transform:rotate(360deg);
     }
 }
-
 @keyframes loader {
     0% {
         opacity:90%;
@@ -17,3 +16,45 @@
         z-index:-10;
     }
 }
+/* Loading the main page */
+
+/* Animate the apparition of the menu */
+@keyframes appear {
+    0% {
+        opacity:0%;
+    }
+    100% {
+        opacity:100%;
+    }
+}
+
+.choice {
+    opacity:0;
+    animation:appear ease-in-out 400ms forwards;
+}
+.choice:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.choice:nth-child(2) {
+    animation-delay: 0.25s;
+}
+.choice:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.food__choice {
+    opacity:0;
+    animation:appear linear 400ms forwards;
+}
+.food__choice:nth-child(1){
+    animation-delay: 0.25s;
+}
+.food__choice:nth-child(2){
+    animation-delay: 0.4s;
+}
+.food__choice:nth-child(3){
+    animation-delay: 0.55s;
+}
+.food__choice:nth-child(4){
+    animation-delay: 0.7s;
+}
+/* Animate the apparition of the menu */
