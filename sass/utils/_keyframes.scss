@@ -30,31 +30,31 @@
 
 .choice {
     opacity:0;
-    animation:appear ease-in-out 400ms forwards;
+    animation:appear ease-out 1000ms forwards;
 }
 .choice:nth-child(1) {
-    animation-delay: 0.1s;
+    animation-delay: 0.5s;
 }
 .choice:nth-child(2) {
-    animation-delay: 0.25s;
+    animation-delay: 0.5s;
 }
 .choice:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
 }
 .food__choice {
     opacity:0;
-    animation:appear linear 400ms forwards;
+    animation:appear ease-out 1500ms forwards;
 }
 .food__choice:nth-child(1){
-    animation-delay: 0.25s;
+    animation-delay: 1s;
 }
 .food__choice:nth-child(2){
-    animation-delay: 0.4s;
+    animation-delay: 1.30s;
 }
 .food__choice:nth-child(3){
-    animation-delay: 0.55s;
+    animation-delay: 1.60s;
 }
 .food__choice:nth-child(4){
-    animation-delay: 0.7s;
+    animation-delay: 1.90s;
 }
 /* Animate the apparition of the menu */

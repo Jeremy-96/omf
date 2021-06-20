@@ -27,78 +27,77 @@
     @include mobile-only {
         width:100%;
     }
-    figure {
-        height:auto;
-        .choices__new {
-            @extend %flex-center;
-            width:30%;
-            height:15%;
-            background-color:$colour-tertiary;
-            position:absolute;
-            top: .75rem;
-            right: .75rem;
-            z-index:1;
-            border-radius:3px;
-            p {
-                font-size:15px;
-                color:darken($colour-tertiary, 50%);
-            }
+    .choices__new {
+        @extend %flex-center;
+        width:30%;
+        height:15%;
+        background-color:$colour-tertiary;
+        position:absolute;
+        top: .75rem;
+        right: .75rem;
+        z-index:1;
+        border-radius:3px;
+        p {
+            font-size:15px;
+            color:darken($colour-tertiary, 50%);
         }
-        img {
-            width:100%;
-            height: 150px;
-            border-radius:10px 10px 0 0;
-        }
-        figcaption {
-            margin:0;
-            padding:0;
+    }
+    img {
+        width:100%;
+        height: 150px;
+        border-radius:10px 10px 0 0;
+    }
+    figcaption {
+        width:100%;
+        margin:0;
+        padding:0;
+        background-color:white;
+        height:70px;
+        @extend %flex-center;
+        border-radius:0 0 10px 10px ;
+        .choices__id {
             background-color:white;
-            height:70px;
-            @extend %flex-center;
-            border-radius:0 0 10px 10px ;
-            .choices__id {
-                background-color:white;
-                width:80%;
-                height:100%;
-                text-decoration:none;
-                color:black;
-                &--click { 
-                    width:90%; 
-                    h3 {
-                        margin:10px 0 0 0;
-                        padding:0;   
-                    }
-                    p {
-                        margin-top:10px;
-                    }
-                    transition:ease-in-out 200ms;
-                    &:hover {
-                        border-radius:5px;
-                        background-color:lighten($colour-tertiary, 10%);
-                        transform:scale(1.05);
-                    }
-                }  
-            }
-            .choices__heart {
-                @extend %flex-center;
-                width:10%;
-                &--empty {
-                    position:relative;
-                    font-size:24px;
+            width:80%;
+            height:100%;
+            text-decoration:none;
+            color:black;
+            &--click { 
+                width:90%; 
+                h3 {
+                    margin:10px 0 0 0;
+                    padding:0;   
                 }
-                &--filled {
-                    position:absolute;
-                    color:white;
-                    font-size:22px;
-                    transition:all 200ms;
-                    &:hover {
-                        background:$linear-gradient;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
+                p {
+                    margin-top:10px;
+                }
+                transition:ease-in-out 200ms;
+                &:hover {
+                    border-radius:5px;
+                    background-color:lighten($colour-tertiary, 10%);
+                    transform:scale(1.05);
+                }
+            }  
+        }
+        .choices__heart {
+            @extend %flex-center;
+            width:10%;
+            &--empty {
+                position:relative;
+                font-size:24px;
+            }
+            &--filled {
+                position:absolute;
+                color:white;
+                font-size:22px;
+                transition:all 200ms;
+                &:hover {
+                    background:$linear-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
     }
 }
+
 
