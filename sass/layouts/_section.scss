@@ -140,17 +140,19 @@
                 &--empty {
                     position:relative;
                     color:black;
-                    font-size:23px;
+                    font-size:22px;
                 }
                 &--filled {
                     position:absolute;
                     color:$colour-lightnessgrey;
-                    font-size:21px;
-                    transition:all  ease-in-out 200ms;
+                    font-size:20px;
                     &:hover {
-                        background:$linear-gradient;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        animation:filling 400ms forwards;
+                    }
+                    @include tablet-only {
+                        &:active {
+                            animation:filling 500ms forwards;
+                        }
                     }
                 }
             }

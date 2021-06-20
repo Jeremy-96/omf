@@ -58,3 +58,18 @@
     animation-delay: 1.90s;
 }
 /* Animation d'apparition des menus */
+
+/* Animation pour le remplissage des coeurs */
+@keyframes filling {
+    0% {
+        opacity:0%;
+    }
+    100% {
+        opacity:100%;
+        background:$linear-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform:scale(1.2);
+    }
+}
+/* Animation pour le remplissage des coeurs */

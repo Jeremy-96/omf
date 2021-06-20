@@ -72,11 +72,16 @@
                 p {
                     margin-top:10px;
                 }
-                transition:ease-in-out 200ms;
+                transition:ease-in-out 250ms;
                 &:hover {
-                    border-radius:5px;
-                    background-color:lighten($colour-tertiary, 10%);
                     transform:scale(1.05);
+                    color:$colour-primary;
+                }
+                @include tablet-only {
+                    &:active {
+                        transform:none;
+                        color:$colour-primary;
+                    }
                 }
             }  
         }
@@ -84,18 +89,20 @@
             @extend %flex-center;
             width:10%;
             &--empty {
-                position:relative;
-                font-size:24px;
+                position:absolute;
+                font-size:22px;
             }
             &--filled {
-                position:absolute;
+                position:relative;
                 color:white;
-                font-size:22px;
-                transition:all 200ms;
+                font-size:19.5px;
                 &:hover {
-                    background:$linear-gradient;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    animation:filling 400ms forwards;
+                }
+                @include tablet-only {
+                    &:active {
+                        animation:filling 500ms forwards;
+                    }
                 }
             }
         }
