@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /* Import all utils-sass files */
-/* BREKPOINTS */
-/* Breakpoint for mobile */
-/* Breakpoint for tablet */
-/* Mixin for each restaurants homepage */
-/* Extension to align on center */
+/* BREAKPOINTS */
+/* Breakpoint pour mobile */
+/* Breakpoint pour mobile */
+/* Breakpoint pour tablet */
+/* Breakpoint pour tablet */
+/* Mixin pour tous les restaurants en page principale */
+/* Mixin pour tous les restaurants en page principale */
+/* Extension pour l'alignement centrale */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 .menu__button, .exploration__button, .loader__quarter, .loader, nav .exploration, nav .location__title, nav .location, .card .menu__choice .food__choice__select, .card .menu__choice .food__choice__price, .card .menu__choice .food__choice__title, .card .menu__choice .food__choice, .card .menu__choice .food, .card .menu__title .title__heart, .card .menu, .card, .restaurants .choices__fourth figcaption .choices__heart, .restaurants .choices__fourth figcaption, .restaurants .choices__fourth .choices__new, .restaurants .choices__third figcaption .choices__heart, .restaurants .choices__third figcaption, .restaurants .choices__third .choices__new, .restaurants .choices__second figcaption .choices__heart, .restaurants .choices__second figcaption, .restaurants .choices__second .choices__new, .restaurants .choices__first figcaption .choices__heart, .restaurants .choices__first figcaption, .restaurants .choices__first .choices__new, .restaurants .choices, .header, body, #bloc_page, nav, main, section {
@@ -13,13 +16,15 @@
   align-items: center;
 }
 
-/* Extension for underline "entrées, plats, desserts" */
+/* Extension pour l'alignement centrale */
+/* Extension pour le soulignement "entrées, plats, desserts" */
 .card .menu__choice .underline {
   font-weight: lighter;
   border-bottom: 3px solid #99E2D0;
 }
 
-/* Loading the main page */
+/* Extension pour le soulignement "entrées, plats, desserts" */
+/* Chargement de la page principale */
 @keyframes loading-spin {
   0% {
     transform: rotate(0deg);
@@ -37,8 +42,8 @@
     z-index: -10;
   }
 }
-/* Loading the main page */
-/* Animate the apparition of the menu */
+/* Chargement de la page principale */
+/* Animation d'apparition des menus */
 @keyframes appear {
   0% {
     opacity: 0%;
@@ -85,10 +90,13 @@
   animation-delay: 1.9s;
 }
 
-/* Animate the apparition of the menu */
+/* Animation d'apparition des menus */
 /* Import all base-sass files */
-/* Add new polices */
-/* Create variables polices */
+/* Ajout des nouvelles polices */
+/* Ajout des nouvelles polices */
+/* Création des variables pour les différentes polices */
+/* Création des variables pour les différentes polices */
+/* Pré-réglage des polices des contenus de pages */
 body {
   font-family: "Roboto";
 }
@@ -99,6 +107,7 @@ body footer h2 {
   font-family: "Shrikhand";
 }
 
+/* Pré-réglage des polices des contenus de pages */
 body, #bloc_page, nav, main, section {
   margin: 0;
   padding: 0;
@@ -119,6 +128,7 @@ figure img {
 }
 
 /* Import all layouts-sass files */
+/* Bannière en pied de page */
 .foot {
   background-color: #353535;
   width: 100%;
@@ -147,14 +157,18 @@ figure img {
   margin-right: 10px;
 }
 
+/* Bannière en pied de page */
+/* Bannière d'en-tête de chaque pages */
 .header {
   width: 100%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1000;
   flex-direction: row;
-  /* Back arrow on the menus pages */
-  /* Header logo for each page */
+  /* Flèche de retour pour les pages de menus */
+  /* Flèche de retour pour les pages de menus */
+  /* Logo d'en-tête poru chaque page */
+  /* Logo d'en-tête poru chaque page */
 }
 .header__back {
   position: absolute;
@@ -173,7 +187,8 @@ figure img {
   font-family: "Shrikhand";
 }
 
-/* Section for index.html */
+/* Bannière d'en-tête de chaque pages */
+/* Section pour index.html */
 .functioning {
   width: 100%;
   height: auto;
@@ -600,8 +615,8 @@ figure img {
   -webkit-text-fill-color: transparent;
 }
 
-/* Section for index.html */
-/* Section for each menu page */
+/* Section pour index.html */
+/* Section pour chaque pages de menus */
 .card {
   width: 100%;
   height: auto;
@@ -733,8 +748,9 @@ figure img {
   color: white;
 }
 
-/* Section for each menu page */
+/* Section pour chaque pages de menus */
 /* Import all pages-sass files */
+/* balise nav pour la page index.html */
 nav {
   background-color: #f5f5f5;
 }
@@ -754,7 +770,8 @@ nav .exploration {
   flex-direction: column;
 }
 
-/* Loader animation for the main page */
+/* balise nav pour la page index.html */
+/* Animation de chargement pour la page principale */
 .loader {
   width: 100%;
   height: 100%;
@@ -816,7 +833,9 @@ nav .exploration {
   }
 }
 
+/* Animation de chargement pour la page principale */
 /* Import all components-sass files */
+/* Paramètrage du bouton de la page principale */
 .exploration__button {
   flex-wrap: wrap;
   width: 200px;
@@ -839,6 +858,8 @@ nav .exploration {
   box-shadow: 8px 8px 15px grey;
 }
 
+/* Paramètrage du bouton de la page principale */
+/* Paramètrage du bouton des pages de menus */
 .menu__button {
   flex-wrap: wrap;
   width: 200px;
@@ -860,5 +881,7 @@ nav .exploration {
   opacity: 80%;
   box-shadow: 8px 8px 15px grey;
 }
+
+/* Paramètrage du bouton des pages de menus */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,21 @@
-/* BREKPOINTS */
-/* Breakpoint for mobile */
+/* BREAKPOINTS */
+/* Breakpoint pour mobile */
 @mixin mobile-only {
     @media screen and(max-device-width:map-get($breakpoints,mobile)) {
         @content;
     }
 }
-/* Breakpoint for tablet */
+/* Breakpoint pour mobile */
+
+/* Breakpoint pour tablet */
 @mixin tablet-only {
     @media screen and(max-device-width:map-get($breakpoints,tablet)) {
         @content;
     }
 }
+/* Breakpoint pour tablet */
 
-
-/* Mixin for each restaurants homepage */
+/* Mixin pour tous les restaurants en page principale */
 @mixin restaurants {
     width:45%;
     margin:10px 0 10px 0;
@@ -99,5 +101,6 @@
         }
     }
 }
+/* Mixin pour tous les restaurants en page principale */
 
 

@@ -1,3 +1,4 @@
+/* Paramètrage du bouton de la page principale */
 .exploration__button {
     @extend %flex-center;
     flex-wrap:wrap;
@@ -20,7 +21,9 @@
         box-shadow:8px 8px 15px grey;
     }
 }
+/* Paramètrage du bouton de la page principale */
 
+/* Paramètrage du bouton des pages de menus */
 .menu__button {
     @extend %flex-center;
     flex-wrap:wrap;
@@ -43,3 +46,4 @@
         box-shadow:8px 8px 15px grey;
     }
 }
+/* Paramètrage du bouton des pages de menus */

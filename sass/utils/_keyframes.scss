@@ -1,4 +1,4 @@
-/* Loading the main page */
+/* Chargement de la page principale */
 @keyframes loading-spin {
     0% {
         transform:rotate(0deg);
@@ -16,9 +16,9 @@
         z-index:-10;
     }
 }
-/* Loading the main page */
+/* Chargement de la page principale */
 
-/* Animate the apparition of the menu */
+/* Animation d'apparition des menus */
 @keyframes appear {
     0% {
         opacity:0%;
@@ -57,4 +57,4 @@
 .food__choice:nth-child(4){
     animation-delay: 1.90s;
 }
-/* Animate the apparition of the menu */
+/* Animation d'apparition des menus */

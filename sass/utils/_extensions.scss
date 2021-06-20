@@ -1,12 +1,14 @@
-/* Extension to align on center */
+/* Extension pour l'alignement centrale */
 %flex-center {
     display:flex;
     justify-content: center;
     align-items: center;
 }
+/* Extension pour l'alignement centrale */
 
-/* Extension for underline "entrées, plats, desserts" */
+/* Extension pour le soulignement "entrées, plats, desserts" */
 %underliner {
     font-weight:lighter;
     border-bottom:3px solid $colour-tertiary; 
 }
+/* Extension pour le soulignement "entrées, plats, desserts" */
