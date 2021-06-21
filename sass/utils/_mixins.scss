@@ -99,11 +99,6 @@
                 &:hover {
                     animation:filling 400ms forwards;
                 }
-                @include tablet-only {
-                    &:active {
-                        animation:filling 500ms forwards;
-                    }
-                }
             }
         }
     }
