@@ -88,6 +88,7 @@
         .choices__heart {
             @extend %flex-center;
             width:10%;
+            cursor:pointer;
             &--empty {
                 position:absolute;
                 font-size:22px;

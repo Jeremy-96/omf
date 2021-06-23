@@ -12,10 +12,12 @@ $font-text: 'Roboto';
 body {
     font-family: $font-text;
     footer {
-        a, p, h2 {
+        a, p, h4 {
             color:$colour-quaternary;
+            font-family:$font-text
         }
          h2 {
+                color:$colour-quaternary;
                 font-family:$font-title;
         }
     }   

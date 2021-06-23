@@ -10,7 +10,7 @@
 /* Extension pour l'alignement centrale */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-.menu__button, .exploration__button, .loader__quarter, .loader, nav .exploration, nav .location__title, nav .location, .card .menu__choice .food__choice__select, .card .menu__choice .food__choice__price, .card .menu__choice .food__choice__title, .card .menu__choice .food__choice, .card .menu__choice .food, .card .menu__title .title__heart, .card .menu, .card, .restaurants .choices__fourth figcaption .choices__heart, .restaurants .choices__fourth figcaption, .restaurants .choices__fourth .choices__new, .restaurants .choices__third figcaption .choices__heart, .restaurants .choices__third figcaption, .restaurants .choices__third .choices__new, .restaurants .choices__second figcaption .choices__heart, .restaurants .choices__second figcaption, .restaurants .choices__second .choices__new, .restaurants .choices__first figcaption .choices__heart, .restaurants .choices__first figcaption, .restaurants .choices__first .choices__new, .restaurants .choices, .header, body, #bloc_page, nav, main, section {
+.menu__button, .exploration__button, .loader__quarter, .loader, nav .exploration, nav .location__title, nav .location, .card .menu__card .food__choice__select, .card .menu__card .food__choice__price, .card .menu__card .food__choice__title, .card .menu__card .food__choice, .card .menu__card .food, .card .menu__title .title__heart, .card .menu, .card, .restaurants .choices__fourth figcaption .choices__heart, .restaurants .choices__fourth figcaption, .restaurants .choices__fourth .choices__new, .restaurants .choices__third figcaption .choices__heart, .restaurants .choices__third figcaption, .restaurants .choices__third .choices__new, .restaurants .choices__second figcaption .choices__heart, .restaurants .choices__second figcaption, .restaurants .choices__second .choices__new, .restaurants .choices__first figcaption .choices__heart, .restaurants .choices__first figcaption, .restaurants .choices__first .choices__new, .restaurants .choices, .functioning .tutorial__number, .header, body, #bloc_page, nav, main, section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 
 /* Extension pour l'alignement centrale */
 /* Extension pour le soulignement "entrées, plats, desserts" */
-.card .menu__choice .underline {
+.card .menu__card .underline {
   font-weight: lighter;
   border-bottom: 3px solid #99E2D0;
 }
@@ -52,6 +52,7 @@
     opacity: 100%;
   }
 }
+/*--- application de l'animation ---*/
 .choice {
   opacity: 0;
   animation: appear ease-out 1000ms forwards;
@@ -90,6 +91,7 @@
   animation-delay: 1.9s;
 }
 
+/*--- application de l'animation ---*/
 /* Animation d'apparition des menus */
 /* Animation pour le remplissage des coeurs */
 @keyframes filling {
@@ -105,6 +107,38 @@
   }
 }
 /* Animation pour le remplissage des coeurs */
+/* Animation de translation et de rotation du selecteur de menu au survol */
+/*--- translation ---*/
+@keyframes translate {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleX(1);
+  }
+}
+.food__choice:hover .food__choice__select {
+  animation: translate 500ms forwards;
+  width: 80px;
+}
+
+/*--- translation ---*/
+/*--- rotation ---*/
+@keyframes roll {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.food__choice:hover .food__choice__select-icon {
+  animation-delay: 250ms;
+  animation: roll 500ms forwards;
+}
+
+/*--- rotation ---*/
+/*--- application de l'animation ---*/
+/*--- application de l'animation ---*/
+/* Animation de translation et de rotation du selecteur de menu au survol */
 /* Import all base-sass files */
 /* Ajout des nouvelles polices */
 /* Ajout des nouvelles polices */
@@ -114,10 +148,12 @@
 body {
   font-family: "Roboto";
 }
-body footer a, body footer p, body footer h2 {
+body footer a, body footer p, body footer h4 {
   color: #FFFFFF;
+  font-family: "Roboto";
 }
 body footer h2 {
+  color: #FFFFFF;
   font-family: "Shrikhand";
 }
 
@@ -239,13 +275,14 @@ figure img {
   box-shadow: 5px 5px 5px #ececec;
 }
 .functioning .tutorial__step i {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 15px;
   color: grey;
 }
 @media screen and (max-device-width: 1024px) {
   .functioning .tutorial__step {
     width: 90%;
+    margin: 10px 0 10px 0;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -256,9 +293,10 @@ figure img {
 .functioning .tutorial__number {
   position: absolute;
   top: 30%;
-  right: 96.5%;
-  padding: 5px 10px 5px 10px;
-  border-radius: 30px;
+  left: -2.25%;
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
   color: white;
   background-color: #9356DC;
 }
@@ -365,6 +403,7 @@ figure img {
 }
 .restaurants .choices__first figcaption .choices__heart {
   width: 10%;
+  cursor: pointer;
 }
 .restaurants .choices__first figcaption .choices__heart--empty {
   position: absolute;
@@ -377,11 +416,6 @@ figure img {
 }
 .restaurants .choices__first figcaption .choices__heart--filled:hover {
   animation: filling 400ms forwards;
-}
-@media screen and (max-device-width: 1024px) {
-  .restaurants .choices__first figcaption .choices__heart--filled:active {
-    animation: filling 500ms forwards;
-  }
 }
 .restaurants .choices__second {
   width: 45%;
@@ -456,6 +490,7 @@ figure img {
 }
 .restaurants .choices__second figcaption .choices__heart {
   width: 10%;
+  cursor: pointer;
 }
 .restaurants .choices__second figcaption .choices__heart--empty {
   position: absolute;
@@ -468,11 +503,6 @@ figure img {
 }
 .restaurants .choices__second figcaption .choices__heart--filled:hover {
   animation: filling 400ms forwards;
-}
-@media screen and (max-device-width: 1024px) {
-  .restaurants .choices__second figcaption .choices__heart--filled:active {
-    animation: filling 500ms forwards;
-  }
 }
 .restaurants .choices__third {
   width: 45%;
@@ -547,6 +577,7 @@ figure img {
 }
 .restaurants .choices__third figcaption .choices__heart {
   width: 10%;
+  cursor: pointer;
 }
 .restaurants .choices__third figcaption .choices__heart--empty {
   position: absolute;
@@ -559,11 +590,6 @@ figure img {
 }
 .restaurants .choices__third figcaption .choices__heart--filled:hover {
   animation: filling 400ms forwards;
-}
-@media screen and (max-device-width: 1024px) {
-  .restaurants .choices__third figcaption .choices__heart--filled:active {
-    animation: filling 500ms forwards;
-  }
 }
 .restaurants .choices__fourth {
   width: 45%;
@@ -638,6 +664,7 @@ figure img {
 }
 .restaurants .choices__fourth figcaption .choices__heart {
   width: 10%;
+  cursor: pointer;
 }
 .restaurants .choices__fourth figcaption .choices__heart--empty {
   position: absolute;
@@ -650,11 +677,6 @@ figure img {
 }
 .restaurants .choices__fourth figcaption .choices__heart--filled:hover {
   animation: filling 400ms forwards;
-}
-@media screen and (max-device-width: 1024px) {
-  .restaurants .choices__fourth figcaption .choices__heart--filled:active {
-    animation: filling 500ms forwards;
-  }
 }
 
 /* Section pour index.html */
@@ -673,7 +695,6 @@ figure img {
   object-fit: cover;
 }
 .card .menu {
-  position: relative;
   z-index: 1;
   width: 90%;
   flex-direction: column;
@@ -696,6 +717,7 @@ figure img {
   width: 80%;
 }
 .card .menu__title .title__heart {
+  cursor: pointer;
   width: 10%;
 }
 @media screen and (max-device-width: 1024px) {
@@ -721,27 +743,22 @@ figure img {
 .card .menu__title .title__heart--filled:hover {
   animation: filling 400ms forwards;
 }
-@media screen and (max-device-width: 1024px) {
-  .card .menu__title .title__heart--filled:active {
-    animation: filling 500ms forwards;
-  }
-}
-.card .menu__choice {
+.card .menu__card {
   width: 90%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-.card .menu__choice .underline {
+.card .menu__card .underline {
   width: 50px;
 }
-.card .menu__choice .food {
+.card .menu__card .food {
   width: 100%;
   height: auto;
   flex-direction: column;
   cursor: pointer;
 }
-.card .menu__choice .food__choice {
+.card .menu__card .food__choice {
   width: 100%;
   height: 80px;
   justify-content: space-between;
@@ -750,28 +767,34 @@ figure img {
   margin: 10px 0 10px 0;
   background-color: white;
 }
-.card .menu__choice .food__choice__title {
+.card .menu__card .food__choice__title {
   width: 80%;
   height: 60%;
   flex-direction: column;
   justify-content: space-between;
 }
-.card .menu__choice .food__choice__title h4 {
+.card .menu__card .food__choice__title h4 {
   margin: 0;
   width: 90%;
-  font-weight: bolder;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.card .menu__choice .food__choice__title p {
+.card .menu__card .food__choice__title p {
   margin: 0;
   width: 90%;
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.card .menu__choice .food__choice__price {
+.card .menu__card .food__choice__price {
   width: 20%;
   height: 60%;
 }
-.card .menu__choice .food__choice__price p {
+.card .menu__card .food__choice__price p {
   height: 100%;
   width: 80%;
   display: flex;
@@ -780,16 +803,18 @@ figure img {
   font-size: 16px;
   font-weight: bolder;
 }
-.card .menu__choice .food__choice__select {
-  display: none;
-  width: 20%;
-  height: 100%;
+.card .menu__card .food__choice__select {
+  opacity: 100%;
+  height: 80px;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
 }
-.card .menu__choice .food__choice__select-icon {
+.card .menu__card .food__choice__select-icon {
   font-size: 30px;
   color: white;
+  transform: rotate(360deg);
 }
 
 /* Section pour chaque pages de menus */
