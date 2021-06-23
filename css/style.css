@@ -917,7 +917,7 @@ nav .exploration {
   box-shadow: 2px 2px 10px grey;
   transition: ease-in-out 200ms;
 }
-.exploration__button p {
+.exploration__button span {
   font-size: 15px;
   color: #FFFFFF;
   margin: 10px;
@@ -941,7 +941,7 @@ nav .exploration {
   box-shadow: 2px 2px 10px grey;
   transition: ease-in-out 200ms;
 }
-.menu__button p {
+.menu__button span {
   font-size: 15px;
   color: #FFFFFF;
   margin: 10px;
