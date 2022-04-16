@@ -1,4 +1,4 @@
-# Ohmyfood
+#  ![Image Ohmyfood](./assets/logo/ohmyfood.png "Ohmyfood")
 
 ## Mise en situation :
 
@@ -14,14 +14,20 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 ## Setup
 
-Clone repository
+Cloner  le repository
 
 ```
 git clone https://github.com/Jeremy-96/JeremyThonon_3_21052021.git
 ```
 
-Une fois dans l'IDE
+Installation du projet
 
 ```
 npm install
 ```
+
+```
+npm run sass
+```
+
+Ouvrir le fichier index.html dans le navigateur
