@@ -17,7 +17,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 Cloner  le repository
 
 ```
-git clone https://github.com/Jeremy-96/JeremyThonon_3_21052021.git
+git clone https://github.com/Jeremy-96/omf.git
 ```
 
 Installation du projet
